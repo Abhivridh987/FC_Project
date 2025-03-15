@@ -1,0 +1,1357 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+.html{
+    font-size:20px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    
+    height:200vh;
+    padding:10px;
+    background: white;
+
+}
+.header{
+    background-image: url(foodhome4.avif);
+    background-size:cover;
+    background-position: center;
+    height:60vh;
+}
+
+.subheader{
+    background-color:white;
+    border-radius:10px;
+    height:10vh;
+    width:92vw;
+    position:relative;
+    left:4vw;
+    top:3vh;
+
+}
+.subheader ul{
+    text-align:center;
+    position:relative;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width:50vw;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    
+}
+.subheader ul li{
+    
+    display: inline-block;
+    padding:10px;
+    margin-inline:2vw;
+    font-size:20px;
+    letter-spacing: 1px;
+}
+
+
+.subheader ul li:hover{
+    
+    display: inline-block;
+    padding:10px;
+    margin-inline:2vw;
+    font-size:20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background-color: rgb(136,0,20);
+    color:white;
+}
+
+.subheader ul a{
+    text-decoration:none;
+    color:black;
+}
+
+.subheader ul a:visited{
+    text-decoration:none;
+    color:black;
+    
+}
+.subheader ul li a:hover{
+    text-decoration:none;
+    color:white;
+    border-radius: 10px;
+    background-color: rgb(136,0,20);
+
+    
+    
+}
+.subheader ul a:active{
+    text-decoration:none;
+    color:black;
+}
+
+.subheader .x .y{    /* to round the food tab */
+    
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(136,0,20);
+    color:white;
+    padding:10px;
+    margin-inline:2vw;
+    font-size:20px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+.subheader ul:nth-child(2) {
+    text-align:left;
+    position:relative;
+    top:-1vh;  /* it was 1.5vh but due to padding 10px in .subheader ul li it is -1vh*/
+    left:10vw;
+    width:10vw;
+    font-weight:normal;
+    display:flex;
+}
+.subheader ul:nth-child(2) div{
+    display: flex;
+    align-items: center;
+    justify-content:bottom;
+}
+.subheader ul:nth-child(2) div a{
+    color:black;
+}
+.subheader ul:nth-child(2) div a:hover{
+    color:black;
+}
+.subheader ul:nth-child(2) div a:active{
+    color:black;
+}
+.subheader ul:nth-child(2) div a:visited{
+    color:black;
+}
+.header h1{
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    position:relative;
+    margin-right:10px;
+    top:10vh;
+    left:0vw;
+}
+.header .line2{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    color:white;
+    text-align:center;
+    
+    position:relative;
+    top:15vh;
+    left:60vw;
+}
+.header .line1{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size:30px;
+    color:white;
+    text-align:center;
+    
+    position:relative;
+    top:15vh;
+    left:70vw;
+}
+
+
+
+
+.options{
+    
+    padding:10px;
+    margin-bottom: 10px;
+    width: 50vw;
+    position: relative;
+    top:1vh;
+    left:25vw;
+    text-align: center;
+    
+
+}
+.options .choice{
+    display:inline-block;
+    border:1px solid rgb(136,0,20);
+    color:black;
+    padding:5px;
+    margin-inline:0.5vw;
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition-duration: 0.5s;
+    
+}
+.options .choice:hover{
+    background-color:rgb(255, 38, 70);
+    color:white;
+    border: 1px solid rgb(255, 38, 70);
+    border-radius:10px
+}
+
+
+input{
+    display: none;
+    border: 1px;
+    border-radius: 10px;
+    height:50px;
+    width:50px;
+}
+
+.body{
+    display:none;
+    position:absolute;
+    top:20vh;
+    left:-25vw;
+    width:98vw;
+    height:300vh;
+    background-color: white;
+    z-index:1;
+    
+}
+
+
+
+.body a{
+    text-decoration:none;
+    color:black;
+}
+.body a:visited{
+    text-decoration:none;
+    color:black;
+}
+.body a:hover{
+    text-decoration:none;
+    color:black;
+}
+.body a:active{
+    text-decoration:none;
+    color:black;
+    
+}
+
+
+
+
+.food1{
+    
+    height:35vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+.food1 img{
+    height:35vh;
+    float:left;
+    margin-right:10px;
+}
+.food1 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size:30px;
+
+    
+}
+.food1 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    
+}
+.checked{
+    color:orange;
+}
+.food1 .rated{
+    margin-top:5px;
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.food1:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+
+
+
+
+
+
+#food1{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food1 img{
+    height:37vh;
+    float:right;
+    margin-left:10px;
+}
+#food1 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+
+    
+}
+#food1 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align: right;
+    
+}
+.checked{
+    color:orange;
+}
+#food1 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:right;
+    font-size:20px;
+    
+    
+}
+
+#food1:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+
+
+
+
+
+#food3{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food3 img{
+    height:37vh;
+    float:left;
+    margin-right:10px;
+}
+#food3 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+
+    
+}
+#food3 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    
+}
+.checked{
+    color:orange;
+}
+#food3 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    
+}
+
+#food3:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+#food4{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food4 img{
+    height:37vh;
+    float:right;
+    margin-right:10px;
+}
+#food4 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size:30px;
+
+    
+}
+#food4 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    
+}
+.checked{
+    color:orange;
+}
+#food4 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    
+}
+
+#food4:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+
+#food5{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food5 img{
+    height:37vh;
+    float:right;
+    width:28vw;
+    
+    margin-left:10px;
+}
+#food5 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+
+    
+}
+#food5 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+.checked{
+    color:orange;
+}
+#food5 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+#food5:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+#food6{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food6 img{
+    height:37vh;
+    width:25vw;
+    float:left;
+    
+    margin-right:10px;
+}
+#food6 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+    
+
+    
+}
+#food6 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#food6 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#food6:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+#food7{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food7 img{
+    height:37vh;
+    width:25vw;
+    float:left;
+    
+    margin-right:10px;
+}
+#food7 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+    
+
+    
+}
+#food7 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#food7 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#food7:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+#food9{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food9 img{
+    height:37vh;
+    width:25vw;
+    float:left;
+    
+    margin-right:10px;
+}
+#food9 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+    
+
+    
+}
+#food9 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#food9 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#food9:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+#food10{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#food10 img{
+    height:37vh;
+    float:right;
+    
+    margin-left:10px;
+}
+#food10 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size:30px;
+    
+
+    
+}
+#food10 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#food10 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#food10:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+#red:checked+ .body{
+    display: block;
+    
+}
+
+
+#green:checked+ .body{
+    display: block;
+}
+#blue:checked+ .body{
+    display: block;
+    
+}
+#orange:checked+ .body{
+    display: block;
+    
+}
+#pink:checked+ .body{
+    display: block;
+}
+#yellow:checked+ .body{
+    display: block;
+    background-color:rgba(204, 255, 0, 0.459);
+}
+
+.line{
+    width:100vw;
+    border:1px solid rgb(136,0,20);
+}
+
+.start{
+    
+    position:relative;
+    top:5vh;
+    left:0;
+    width:98vw;
+    height:300vh;
+    
+
+    
+}
+
+
+
+.start a{
+    text-decoration:none;
+    color:black;
+}
+.start a:visited{
+    text-decoration:none;
+    color:black;
+}
+.start a:hover{
+    text-decoration:none;
+    color:black;
+}
+.start a:active{
+    text-decoration:none;
+    color:black;
+}
+
+.sfood1{
+    
+    height:35vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+.sfood1 img{
+    height:35vh;
+    float:left;
+    margin-right:10px;
+}
+.sfood1 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size:30px;
+   
+
+    
+}
+.sfood1 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    
+}
+.checked{
+    color:orange;
+}
+.sfood1 .rated{
+    margin-top:5px;
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.sfood1:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+
+
+
+
+
+
+#sfood1{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood1 img{
+    height:37vh;
+    float:right;
+    margin-left:10px;
+}
+#sfood1 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+
+    
+}
+#sfood1 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align: right;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood1 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:right;
+    font-size:20px;
+    
+    
+}
+
+#sfood1:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+
+
+
+
+
+#sfood3{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood3 img{
+    height:37vh;
+    float:left;
+    margin-right:10px;
+}
+#sfood3 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size:30px;
+
+    
+}
+#sfood3 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood3 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    
+}
+
+#sfood3:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+#sfood4{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood4 img{
+    height:37vh;
+    float:right;
+    margin-left:10px;
+}
+#sfood4 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size:30px;
+    margin-left: 20px;
+
+    
+}
+#sfood4 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    margin-left: 20px;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood4 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align:left;
+    margin-left: 20px;
+}
+
+#sfood4:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+
+#sfood5{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood5 img{
+    height:37vh;
+    float:left;
+    width:28vw;
+    
+    margin-right:10px;
+}
+#sfood5 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size: 30px;
+
+    
+}
+#sfood5 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood5 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+#sfood5:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+#sfood6{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood6 img{
+    height:37vh;
+    width:25vw;
+    float:right;
+    
+    margin-left:10px;
+}
+#sfood6 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size:30px;
+    margin-left: 20px;
+    
+
+    
+}
+#sfood6 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    margin-left: 20px;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood6 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    margin-left: 20px;
+    
+}
+
+#sfood6:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+
+#sfood7{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood7 img{
+    height:37vh;
+    width:25vw;
+    float:left;
+    
+    margin-right:10px;
+}
+#sfood7 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+    
+
+    
+}
+#sfood7 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood7 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#sfood7:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+#sfood8{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood8 img{
+    height:37vh;
+    width:25vw;
+    float:right;
+    
+    margin-left:10px;
+}
+#sfood8 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+    
+
+    
+}
+#sfood8 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood8 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#sfood8:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+#sfood9{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood9 img{
+    height:37vh;
+    width:25vw;
+    float:left;
+    
+    margin-right:10px;
+}
+#sfood9 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+    
+
+    
+}
+#sfood9 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood9 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#sfood9:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
+
+
+#sfood10{
+    
+    height:37vh;
+    padding:10px;
+    display: flow-root;
+
+    
+}
+#sfood10 img{
+    height:37vh;
+    float:right;
+    
+    margin-left:10px;
+}
+#sfood10 h2{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size:30px;
+    
+
+    
+}
+#sfood10 p{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:20px;
+    
+}
+.checked{
+    color:orange;
+}
+#sfood10 .rated{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size:20px;
+    
+}
+
+#sfood10:hover{
+    transform:scale(1.02);
+    transition-duration: 0.4s;
+    background-color: rgba(136, 0, 20, 0.168);
+    
+}
